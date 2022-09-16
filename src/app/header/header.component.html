@@ -1,0 +1,48 @@
+<header class="main-header">
+  <h1 class="main-header__title">
+    <span class="main-header__title--blue">TELK </span
+    ><span class="main-header__title--orange">©</span>
+  </h1>
+  <div class="container-menu">
+    <nav class="main-header__menu">
+      <ul>
+        <li>
+          <a routerLink="produtos">
+            <i class="fa-brands fa-product-hunt"></i>
+            Produtos
+          </a>
+        </li>
+        <li>
+          <a routerLink="carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Carrinho
+            <span class="badge-carrinho">{{
+              carrinhoService.obtemCarrinho().length
+            }}</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="contato">
+            <i class="fa-solid fa-address-book"></i> Contato
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/_vmartinsz/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/vitormartinsxd"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/vitor-martins-42176a165/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <app-barra-pesquisa></app-barra-pesquisa>
+  </div>
+</header>
